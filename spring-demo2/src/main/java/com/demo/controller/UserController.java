@@ -1,4 +1,4 @@
-package com.demo.component;
+package com.demo.controller;
 
 import org.springframework.stereotype.Controller;
 
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
  * Time: 20:50
  */
 @Controller
-public class ArticleController {
+public class UserController {
     public String sayHi() {
         return "Hello world";
     }
