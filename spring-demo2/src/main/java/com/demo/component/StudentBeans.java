@@ -2,16 +2,16 @@ package com.demo.component;
 
 import com.demo.model.Student;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Component;
 
 /**
  * Created with IntelliJ IDEA.
  * Description:
- * User: liaoyueyue
+ * com.demo.model.User: liaoyueyue
  * Date: 2023-09-19
  * Time: 18:56
  */
-@Controller
+@Component
 public class StudentBeans {
     @Bean(name = {"student1"})
     public Student getStudentBean1() {

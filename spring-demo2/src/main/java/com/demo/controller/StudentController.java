@@ -9,7 +9,7 @@ import javax.annotation.Resource;
 /**
  * Created with IntelliJ IDEA.
  * Description:
- * User: liaoyueyue
+ * com.demo.model.User: liaoyueyue
  * Date: 2023-09-19
  * Time: 19:08
  */

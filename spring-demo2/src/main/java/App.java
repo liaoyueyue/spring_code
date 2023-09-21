@@ -1,4 +1,5 @@
 import com.demo.controller.StudentController;
+import com.demo.controller.UserAdviceController;
 import com.demo.controller.UserController;
 import com.demo.model.Student;
 import com.demo.service.UserService;
@@ -9,7 +10,7 @@ import org.springframework.stereotype.Controller;
 /**
  * Created with IntelliJ IDEA.
  * Description:
- * User: liaoyueyue
+ * com.demo.model.User: liaoyueyue
  * Date: 2023-09-17
  * Time: 16:33
  */
@@ -19,7 +20,7 @@ public class App {
 /*        // 1.先得到 spring 对象
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-config.xml");
         // 2.从 spring 中取出 Bean 对象
-        User user = (User) context.getBean("user");
+        com.demo.model.User user = (com.demo.model.User) context.getBean("user");
         // 3.使用 Bean （可选）
         System.out.println(user.sayHi());*/
 
@@ -35,9 +36,13 @@ public class App {
 //        System.out.println(student);
 //        student = context.getBean("student2", Student.class);
 //        System.out.println(student);
+//
+//        StudentController sc = context.getBean("studentController", StudentController.class);
+//        sc.sayHi();
 
-        StudentController sc = context.getBean("studentController", StudentController.class);
-        sc.sayHi();
-
+        UserController userController = context.getBean("userController", UserController.class);
+        userController.getUser();
+        UserAdviceController userAdviceController = context.getBean("userAdviceController", UserAdviceController.class);
+        userAdviceController.getUser();
     }
 }
