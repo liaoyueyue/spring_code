@@ -1,0 +1,115 @@
+2023-09-24 23:05:07.233  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Starting SpringBootDemo2Application using Java 1.8.0_192 on R7000 with PID 2864 (E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2\target\classes started by liaoyueyue in E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2)
+2023-09-24 23:05:07.233 DEBUG 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Running with Spring Boot v2.7.16, Spring v5.3.30
+2023-09-24 23:05:07.234  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : The following 1 profile is active: "dev"
+2023-09-24 23:05:07.265  INFO 2864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-24 23:05:07.277  INFO 2864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-24 23:05:07.958  INFO 2864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-24 23:05:07.967  INFO 2864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-24 23:05:07.968  INFO 2864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-09-24 23:05:08.034  INFO 2864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-24 23:05:08.035  INFO 2864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 758 ms
+2023-09-24 23:05:08.300  INFO 2864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-24 23:05:08.332  INFO 2864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-24 23:05:08.344  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Started SpringBootDemo2Application in 1.429 seconds (JVM running for 2.354)
+2023-09-24 23:10:57.232  INFO 2864 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-09-24 23:10:57.600  INFO 2864 --- [Thread-8] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-24 23:10:57.684  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Starting SpringBootDemo2Application using Java 1.8.0_192 on R7000 with PID 2864 (E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2\target\classes started by liaoyueyue in E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2)
+2023-09-24 23:10:57.684 DEBUG 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Running with Spring Boot v2.7.16, Spring v5.3.30
+2023-09-24 23:10:57.684  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : The following 1 profile is active: "dev"
+2023-09-24 23:10:57.847  INFO 2864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-24 23:10:57.847  INFO 2864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-24 23:10:57.847  INFO 2864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-09-24 23:10:57.865  INFO 2864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-24 23:10:57.865  INFO 2864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 179 ms
+2023-09-24 23:10:57.925  INFO 2864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-24 23:10:57.932  INFO 2864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-24 23:10:57.935  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Started SpringBootDemo2Application in 0.278 seconds (JVM running for 351.946)
+2023-09-24 23:10:57.937  INFO 2864 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-09-24 23:11:09.509  INFO 2864 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-09-24 23:11:09.881  INFO 2864 --- [Thread-14] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-24 23:11:09.988  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Starting SpringBootDemo2Application using Java 1.8.0_192 on R7000 with PID 2864 (E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2\target\classes started by liaoyueyue in E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2)
+2023-09-24 23:11:09.988 DEBUG 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Running with Spring Boot v2.7.16, Spring v5.3.30
+2023-09-24 23:11:09.988  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : The following 1 profile is active: "dev"
+2023-09-24 23:11:10.140  INFO 2864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-24 23:11:10.141  INFO 2864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-24 23:11:10.141  INFO 2864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-09-24 23:11:10.170  INFO 2864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-24 23:11:10.170  INFO 2864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 180 ms
+2023-09-24 23:11:10.247  INFO 2864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-24 23:11:10.254  INFO 2864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-24 23:11:10.259  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Started SpringBootDemo2Application in 0.294 seconds (JVM running for 364.27)
+2023-09-24 23:11:10.261  INFO 2864 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-09-24 23:11:51.315  INFO 2864 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-09-24 23:11:51.666  INFO 2864 --- [Thread-18] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-24 23:11:51.755  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Starting SpringBootDemo2Application using Java 1.8.0_192 on R7000 with PID 2864 (E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2\target\classes started by liaoyueyue in E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2)
+2023-09-24 23:11:51.755 DEBUG 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Running with Spring Boot v2.7.16, Spring v5.3.30
+2023-09-24 23:11:51.755  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : The following 1 profile is active: "dev"
+2023-09-24 23:11:51.900  INFO 2864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-24 23:11:51.902  INFO 2864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-24 23:11:51.902  INFO 2864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-09-24 23:11:51.932  INFO 2864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-24 23:11:51.932  INFO 2864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 175 ms
+2023-09-24 23:11:51.978  INFO 2864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-24 23:11:51.983  INFO 2864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-24 23:11:51.986  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Started SpringBootDemo2Application in 0.251 seconds (JVM running for 405.997)
+2023-09-24 23:11:51.987  INFO 2864 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-09-24 23:13:09.682  INFO 2864 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-09-24 23:13:10.089  INFO 2864 --- [Thread-22] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-24 23:13:10.163  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Starting SpringBootDemo2Application using Java 1.8.0_192 on R7000 with PID 2864 (E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2\target\classes started by liaoyueyue in E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2)
+2023-09-24 23:13:10.163 DEBUG 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Running with Spring Boot v2.7.16, Spring v5.3.30
+2023-09-24 23:13:10.163  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : The following 1 profile is active: "dev"
+2023-09-24 23:13:10.315  INFO 2864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-24 23:13:10.315  INFO 2864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-24 23:13:10.315  INFO 2864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-09-24 23:13:10.333  INFO 2864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-24 23:13:10.334  INFO 2864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 169 ms
+2023-09-24 23:13:10.382  INFO 2864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-24 23:13:10.388  INFO 2864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-24 23:13:10.390  INFO 2864 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Started SpringBootDemo2Application in 0.25 seconds (JVM running for 484.401)
+2023-09-24 23:13:10.391  INFO 2864 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-09-24 23:16:09.960  INFO 7776 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Starting SpringBootDemo2Application using Java 1.8.0_192 on R7000 with PID 7776 (E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2\target\classes started by liaoyueyue in E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2)
+2023-09-24 23:16:09.960 DEBUG 7776 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Running with Spring Boot v2.7.16, Spring v5.3.30
+2023-09-24 23:16:09.961  INFO 7776 --- [restartedMain] c.e.s.SpringBootDemo2Application         : The following 1 profile is active: "dev"
+2023-09-24 23:16:09.995  INFO 7776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-24 23:16:09.997  INFO 7776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-24 23:16:10.740  INFO 7776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-24 23:16:10.749  INFO 7776 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-24 23:16:10.749  INFO 7776 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-09-24 23:16:10.823  INFO 7776 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-24 23:16:10.824  INFO 7776 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 827 ms
+2023-09-24 23:16:11.109  INFO 7776 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-24 23:16:11.137  INFO 7776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-24 23:16:11.145  INFO 7776 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Started SpringBootDemo2Application in 1.525 seconds (JVM running for 2.476)
+2023-09-24 23:16:34.454  INFO 7776 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-24 23:16:34.455  INFO 7776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-24 23:16:34.456  INFO 7776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-24 23:16:34.475  INFO 7776 --- [http-nio-8080-exec-1] c.e.springbootdemo2.ArticleController    : 这里是 slf4j 的 info
+2023-09-24 23:16:55.205  INFO 7776 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-09-24 23:16:55.644  INFO 7776 --- [Thread-9] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-24 23:16:55.645  INFO 7776 --- [Thread-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-24 23:16:55.757  INFO 7776 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Starting SpringBootDemo2Application using Java 1.8.0_192 on R7000 with PID 7776 (E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2\target\classes started by liaoyueyue in E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2)
+2023-09-24 23:16:55.757 DEBUG 7776 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Running with Spring Boot v2.7.16, Spring v5.3.30
+2023-09-24 23:16:55.758  INFO 7776 --- [restartedMain] c.e.s.SpringBootDemo2Application         : The following 1 profile is active: "dev"
+2023-09-24 23:16:55.983  INFO 7776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-24 23:16:55.984  INFO 7776 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-24 23:16:55.984  INFO 7776 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-09-24 23:16:56.004  INFO 7776 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-24 23:16:56.004  INFO 7776 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 245 ms
+2023-09-24 23:16:56.076  INFO 7776 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-24 23:16:56.083  INFO 7776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-24 23:16:56.085  INFO 7776 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Started SpringBootDemo2Application in 0.361 seconds (JVM running for 47.415)
+2023-09-24 23:16:56.099  INFO 7776 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-09-24 23:16:57.495  INFO 7776 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-09-24 23:16:57.905  INFO 7776 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-24 23:16:58.008  INFO 7776 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Starting SpringBootDemo2Application using Java 1.8.0_192 on R7000 with PID 7776 (E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2\target\classes started by liaoyueyue in E:\MyUniversity\0_ProgrammingLearning\spring_code\spring-boot-demo2)
+2023-09-24 23:16:58.008 DEBUG 7776 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Running with Spring Boot v2.7.16, Spring v5.3.30
+2023-09-24 23:16:58.008  INFO 7776 --- [restartedMain] c.e.s.SpringBootDemo2Application         : The following 1 profile is active: "dev"
+2023-09-24 23:16:58.155  INFO 7776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-24 23:16:58.156  INFO 7776 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-24 23:16:58.156  INFO 7776 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.80]
+2023-09-24 23:16:58.175  INFO 7776 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-24 23:16:58.175  INFO 7776 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 165 ms
+2023-09-24 23:16:58.240  INFO 7776 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-24 23:16:58.245  INFO 7776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-24 23:16:58.249  INFO 7776 --- [restartedMain] c.e.s.SpringBootDemo2Application         : Started SpringBootDemo2Application in 0.261 seconds (JVM running for 49.578)
+2023-09-24 23:16:58.250  INFO 7776 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

@@ -1,0 +1,9 @@
+#设置日志级别
+logging:
+  level:
+    root: info
+    com:
+      example:
+        springbootdemo2: trace
+  file:
+    name: log\spring.log
