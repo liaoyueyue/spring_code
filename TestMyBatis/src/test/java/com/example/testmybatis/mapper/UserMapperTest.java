@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -76,8 +77,11 @@ class UserMapperTest {
     }
 
     @Test
+    @Transactional
+    // Transactional 交易的；交易的，业务的；- 这个注释可以让下面的方法不会真的影响数据库
     void delUserById() {
-        int result = userMapper.delUserById(5);
+        int result = userMapper.delUserById(4);
         System.out.println("result = " + result);
+        Assertions.assertEquals(1, result);
     }
 }
