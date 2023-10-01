@@ -4,11 +4,33 @@
     <select id="getUserById" resultType="com.example.testmybatis.entity.UserInfo">
         select *
         from userinfo
-        where id = ${userId}
+        where id = #{userId}
     </select>
 
     <select id="getUserInfoAll" resultType="com.example.testmybatis.entity.UserInfo">
         select *
         from userinfo
     </select>
+
+    <insert id="addUserInfo">
+        insert into userinfo(username, password, createtime, updatetime)
+        values (#{username}, #{password}, #{createTime}, #{updateTime})
+    </insert>
+
+    <!--    useGeneratedKeys="true" keyProperty="id" 这样写可以让数据库中自动生成的主键赋值给 keyProperty 中的属性 -->
+    <insert id="addGetUserInfo" useGeneratedKeys="true" keyProperty="id">
+        insert into userinfo(username, password, createtime, updatetime)
+        values (#{username}, #{password}, #{createTime}, #{updateTime})
+    </insert>
+
+    <update id="updateUsername">
+        update userinfo
+        set username = #{username}
+        where id = #{id}
+    </update>
+
+    <delete id="delUserById">
+        delete from userinfo where id = #{id}
+    </delete>
+
 </mapper>

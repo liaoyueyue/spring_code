@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 
@@ -33,5 +34,50 @@ class UserMapperTest {
         List<UserInfo> userInfoList = userMapper.getUserInfoAll();
         System.out.println(userInfoList);
         Assertions.assertEquals(1, userInfoList.size());
+    }
+
+    @Test
+    void addUserInfo() {
+        // 伪代码
+        UserInfo userInfo = new UserInfo();
+        userInfo.setUsername("alice");
+        userInfo.setPassword("123");
+        userInfo.setCreateTime(LocalDateTime.now());
+        userInfo.setUpdateTime(LocalDateTime.now());
+        int result = userMapper.addUserInfo(userInfo);
+        System.out.println(getClass().getName() + "受影响的行数: " + result);
+        Assertions.assertEquals(1, result);
+    }
+
+    @Test
+    void addGetUserInfo() {
+        // 伪代码
+        UserInfo userInfo = new UserInfo();
+        userInfo.setUsername("anna");
+        userInfo.setPassword("123");
+        userInfo.setCreateTime(LocalDateTime.now());
+        userInfo.setUpdateTime(LocalDateTime.now());
+        int result = userMapper.addGetUserInfo(userInfo);
+        System.out.println(getClass().getName() + "受影响的行数: " + result);
+        int uid = userInfo.getId(); // 这里获取到的 id 是写了相应注释后 mybatis 帮助做的
+        System.out.println("用户id = " + uid);
+        Assertions.assertEquals(1, result);
+    }
+
+    @Test
+    void updateUsername() {
+        // 伪代码
+        UserInfo userInfo = new UserInfo();
+        userInfo.setId(5);
+        userInfo.setUsername("mike");
+        int result = userMapper.updateUsername(userInfo);
+        System.out.println("result = " + result);
+        Assertions.assertEquals(1, result);
+    }
+
+    @Test
+    void delUserById() {
+        int result = userMapper.delUserById(5);
+        System.out.println("result = " + result);
     }
 }
