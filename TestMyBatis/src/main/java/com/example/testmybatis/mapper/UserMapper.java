@@ -4,6 +4,8 @@ import com.example.testmybatis.entity.UserInfo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * Description:
@@ -14,5 +16,7 @@ import org.apache.ibatis.annotations.Param;
 
 @Mapper
 public interface UserMapper {
-    UserInfo getUserById(@Param("user_id") Integer id);
+    UserInfo getUserById(@Param("userId") Integer userId);
+
+    List<UserInfo> getUserInfoAll();
 }

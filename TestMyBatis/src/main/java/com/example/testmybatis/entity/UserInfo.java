@@ -17,7 +17,7 @@ public class UserInfo {
     private String username;
     private String password;
     private String photo; // 头像
-    private LocalDateTime createtime;
-    private LocalDateTime updatetime;
+    private LocalDateTime createTime;
+    private LocalDateTime updateTime;
     private int state;
 }
