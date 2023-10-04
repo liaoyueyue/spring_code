@@ -34,7 +34,7 @@ class UserMapperTest {
     void getUserInfoAll() {
         List<UserInfo> userInfoList = userMapper.getUserInfoAll();
         System.out.println(userInfoList);
-        Assertions.assertEquals(1, userInfoList.size());
+        Assertions.assertEquals(4, userInfoList.size());
     }
 
     @Test
@@ -83,5 +83,25 @@ class UserMapperTest {
         int result = userMapper.delUserById(4);
         System.out.println("result = " + result);
         Assertions.assertEquals(1, result);
+    }
+
+    @Test
+    void getListByOrder() {
+        List<UserInfo> userInfoList = userMapper.getListByOrder("desc");
+        System.out.println(userInfoList);
+        Assertions.assertEquals(4, userInfoList.size());
+    }
+
+
+    @Test
+    void login() {
+        UserInfo userInfo = userMapper.login("admin", "' or '1' = '1"); // 当在 mapper.xml 内使用 $ 标记时可进行 sql 注入操作
+        System.out.println(userInfo);
+    }
+
+    @Test
+    void getUserByFuzzyName() {
+        List<UserInfo> userInfos = userMapper.getUserByFuzzyName("a");
+        System.out.println(userInfos);
     }
 }

@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.testmybatis.mapper.UserMapper">
+
+    <resultMap id="baseMap" type="com.example.testmybatis.entity.UserInfo">
+        <id column="id" property="id"></id>
+        <result column="username" property="username"></result>
+        <result column="password" property="password"></result>
+        <result column="photo" property="photo"></result>
+        <result column="createtime" property="createTime"></result>
+        <result column="updatetime" property="updateTime"></result>
+        <result column="state" property="state"></result>
+    </resultMap>
+
     <select id="getUserById" resultType="com.example.testmybatis.entity.UserInfo">
         select *
         from userinfo
         where id = #{userId}
     </select>
 
-    <select id="getUserInfoAll" resultType="com.example.testmybatis.entity.UserInfo">
+    <select id="getUserInfoAll" resultMap="baseMap">
         select *
         from userinfo
     </select>
@@ -30,7 +41,31 @@
     </update>
 
     <delete id="delUserById">
-        delete from userinfo where id = #{id}
+        delete
+        from userinfo
+        where id = #{id}
     </delete>
+
+    <select id="getListByOrder" resultType="com.example.testmybatis.entity.UserInfo">
+        select *
+        from userinfo
+        order by id ${order}
+    </select>
+
+    <select id="login" resultType="com.example.testmybatis.entity.UserInfo">
+        select *
+        from userinfo
+        where username = '${username}'
+          and password = '${password}'
+    </select>
+    <!--    $ 是直接替换-->
+    <!--    # 是预处理-->
+
+    <select id="getUserByFuzzyName" resultType="com.example.testmybatis.entity.UserInfo">
+        select *
+        from userinfo
+        where username like concat('%', #{fuzzyName}, '%')
+    </select>
+
 
 </mapper>

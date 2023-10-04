@@ -58,4 +58,27 @@ public interface UserMapper {
      */
     int delUserById(Integer id);
 
+
+    /**
+     * 根据排序规则来获取每个用户的信息
+     * @param order 排序的规则
+     * @return 所有用户信息列表
+     */
+    List<UserInfo> getListByOrder(@Param("order") String order);
+
+    /**
+     * 用户登录操作
+     * @param username 用户名
+     * @param password 用户密码
+     * @return 用户信息
+     */
+    UserInfo login(@Param("username") String username,@Param("password") String password);
+
+    /**
+     * 使用模糊用户名查询用户
+     * @param fuzzyName 模糊用户名
+     * @return 用户信息
+     */
+    List<UserInfo> getUserByFuzzyName(@Param("fuzzyName") String fuzzyName);
+
 }
