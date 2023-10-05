@@ -2,6 +2,7 @@ package com.example.testmybatis.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
@@ -12,7 +13,9 @@ import java.time.LocalDateTime;
  * Time: 16:43
  */
 @Data
-public class UserInfo {
+public class UserInfo implements Serializable {
+    private final long serializableId = 1L;
+
     private int id;
     private String username;
     private String password;

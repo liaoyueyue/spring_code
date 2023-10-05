@@ -1,8 +1,8 @@
 package com.example.testmybatis.entity.vo;
 
+import com.example.testmybatis.entity.ArticleInfo;
 import lombok.Data;
 
-import java.time.LocalDateTime;
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,14 +12,13 @@ import java.time.LocalDateTime;
  * Time: 15:44
  */
 @Data
-public class ArticleInfoVO{
-    private int id;
-    private String title;
-    private String content;
-    private LocalDateTime createTime;
-    private LocalDateTime updateTime;
-    private int uid;
-    private int rCount;
-    private int state;
+public class ArticleInfoVO extends ArticleInfo{
     private String username;
+
+    @Override
+    public String toString() {
+        return "ArticleInfoVO{" +
+                "username='" + username + '\'' +
+                '}' + super.toString();
+    }
 }

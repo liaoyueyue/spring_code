@@ -81,4 +81,42 @@ public interface UserMapper {
      */
     List<UserInfo> getUserByFuzzyName(@Param("fuzzyName") String fuzzyName);
 
+    /**
+     * 添加用户信息2
+     * @param userInfo 用户信息实体
+     * @return 数据库影响行数
+     */
+
+    int addUserInfo2(UserInfo userInfo);
+
+    /**
+     * 添加用户信息3
+     * @param userInfo 用户信息实体
+     * @return 数据库影响行数
+     */
+
+    int addUserInfo3(UserInfo userInfo);
+
+    /**
+     * 条件查询用户信息
+     * @param username 用户名
+     * @param password 密码
+     * @return 所有符合条件的用户的信息
+     */
+    List<UserInfo> getAllUserByParam(@Param("username") String username, @Param("password") String password);
+
+    /**
+     * 修改用户信息
+     * @param userInfo 用户信息实体
+     * @return 数据库影响行数
+     */
+    int updateUserInfo(UserInfo userInfo);
+
+    /**
+     * 删除符合 id 列表中的用户信息
+     * @param idList 用户 id 列表
+     * @return 数据库影响行数
+     */
+    int deleteUserListById(List<Integer> idList);
+
 }

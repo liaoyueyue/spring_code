@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -41,7 +42,7 @@ class UserMapperTest {
     void addUserInfo() {
         // 伪代码
         UserInfo userInfo = new UserInfo();
-        userInfo.setUsername("alice");
+        userInfo.setUsername("admin");
         userInfo.setPassword("123");
         userInfo.setCreateTime(LocalDateTime.now());
         userInfo.setUpdateTime(LocalDateTime.now());
@@ -103,5 +104,52 @@ class UserMapperTest {
     void getUserByFuzzyName() {
         List<UserInfo> userInfos = userMapper.getUserByFuzzyName("a");
         System.out.println(userInfos);
+    }
+
+    @Test
+    void addUserInfo2() {
+        UserInfo userInfo = new UserInfo();
+        userInfo.setUsername("zhaoliu");
+        userInfo.setPassword("123");
+        userInfo.setPhoto(null);
+        int result = userMapper.addUserInfo2(userInfo);
+        System.out.println("result = " + result);
+    }
+
+    @Test
+    void addUserInfo3() {
+        UserInfo userInfo = new UserInfo();
+        userInfo.setUsername("lisi");
+        userInfo.setPassword("123");
+        userInfo.setPhoto("default.png");
+        int result = userMapper.addUserInfo3(userInfo);
+        System.out.println("result = " + result);
+    }
+
+    @Test
+    void getAllUserByParam() {
+        List<UserInfo> userInfoList = userMapper.getAllUserByParam("anna", null);
+        System.out.println(userInfoList);
+    }
+
+    @Test
+    void updateUserInfo() {
+        UserInfo userInfo = new UserInfo();
+        userInfo.setId(9);
+        userInfo.setUsername("laoliu");
+        userInfo.setPassword(null);
+        userInfo.setPhoto(null);
+        int result = userMapper.updateUserInfo(userInfo);
+        System.out.println("result = " + result);
+    }
+
+    @Test
+    @Transactional
+    void deleteUserListById() {
+        List<Integer> idList = new ArrayList<>();
+        idList.add(4);
+        idList.add(5);
+        int result = userMapper.deleteUserListById(idList);
+        System.out.println("result = " + result);
     }
 }

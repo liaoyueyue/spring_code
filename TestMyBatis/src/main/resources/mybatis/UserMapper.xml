@@ -3,13 +3,13 @@
 <mapper namespace="com.example.testmybatis.mapper.UserMapper">
 
     <resultMap id="baseMap" type="com.example.testmybatis.entity.UserInfo">
-        <id column="id" property="id"></id>
-        <result column="username" property="username"></result>
-        <result column="password" property="password"></result>
-        <result column="photo" property="photo"></result>
-        <result column="createtime" property="createTime"></result>
-        <result column="updatetime" property="updateTime"></result>
-        <result column="state" property="state"></result>
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="photo" property="photo"/>
+        <result column="createtime" property="createTime"/>
+        <result column="updatetime" property="updateTime"/>
+        <result column="state" property="state"/>
     </resultMap>
 
     <select id="getUserById" resultType="com.example.testmybatis.entity.UserInfo">
@@ -67,5 +67,81 @@
         where username like concat('%', #{fuzzyName}, '%')
     </select>
 
+    <insert id="addUserInfo2">
+        insert into userinfo(username, password
+                             <if test="photo!=null">
+                                 ,photo
+                             </if>
+                             )
+        VALUES (#{username}, #{password}
+                <if test="photo!=null">
+                    ,#{photo}
+                </if>
+                )
+    </insert>
+
+    <insert id="addUserInfo3">
+        insert into userinfo
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="username!=null">
+                username,
+            </if>
+            <if test="password!=null">
+                password,
+            </if>
+            <if test="photo!=null">
+                photo,
+            </if>
+        </trim>
+        values
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="username!=null">
+                #{username},
+            </if>
+            <if test="password!=null">
+                #{password},
+            </if>
+            <if test="photo!=null">
+                #{photo},
+            </if>
+        </trim>
+    </insert>
+
+<!--    where 标签通常和 if 标签配合使用，使用 where 标签会在合适时机帮助删除 if 标签内的 and -->
+    <select id="getAllUserByParam" resultMap="baseMap">
+        select * from userinfo
+        <where>
+            <if test="username!=null">
+                username = #{username}
+            </if>
+            <if test="password!=null">
+                and password = #{password}
+            </if>
+        </where>
+    </select>
+
+    <!--    set 标签通常和 if 标签配合使用，使用 set 标签会在合适时机帮助删除 if 标签内最后边的 , -->
+    <update id="updateUserInfo">
+        update userinfo
+        <set>
+            <if test="username!=null">
+                username = #{username},
+            </if>
+            <if test="password!=null">
+                password = #{password},
+            </if>
+            <if test="photo">
+                photo = #{photo},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteUserListById">
+        delete from userinfo where id in
+        <foreach collection="idList" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </delete>
 
 </mapper>
