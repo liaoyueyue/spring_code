@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springboottransaction.mapper.UserMapper">
+    <resultMap id="baseMap" type="com.example.springboottransaction.entity.UserInfo">
+        <id column="createtime" property="createTime"></id>
+        <id column="updatetime" property="updateTime"></id>
+    </resultMap>
+
+    <insert id="add" useGeneratedKeys="true" keyProperty="id">
+        insert into userinfo(username, password, createtime, updatetime)
+        values (#{username}, #{password}, #{createTime}, #{updateTime})
+    </insert>
+
+</mapper>

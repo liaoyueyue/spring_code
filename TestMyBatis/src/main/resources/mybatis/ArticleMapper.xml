@@ -4,14 +4,14 @@
 
     <resultMap id="baseMap" type="com.example.testmybatis.entity.vo.ArticleInfoVO">
         <id column="id" property="id"></id>
-        <id column="title" property="title"></id>
-        <id column="content" property="content"></id>
-        <id column="createtime" property="createTime"></id>
-        <id column="updatetime" property="updateTime"></id>
-        <id column="uid" property="uid"></id>
-        <id column="rcount" property="rCount"></id>
-        <id column="state" property="state"></id>
-        <id column="username" property="username"></id>
+        <result column="title" property="title"></result>
+        <result column="content" property="content"></result>
+        <result column="createtime" property="createTime"></result>
+        <result column="updatetime" property="updateTime"></result>
+        <result column="uid" property="uid"></result>
+        <result column="rcount" property="rCount"></result>
+        <result column="state" property="state"></result>
+        <result column="username" property="username"></result>
     </resultMap>
 
     <select id="getById" resultMap="baseMap">
