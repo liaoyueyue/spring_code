@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: T20240321
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/order_demo?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    cache: false
+server:
+  port: 8080
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    com:
+      example:
+        t20240321: debug

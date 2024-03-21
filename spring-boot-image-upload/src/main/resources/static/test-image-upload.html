@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试上传图片</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <h3>选择上传图片</h3>
+    <input
+            type="file"
+            id="image-file"
+            accept="image/*"
+    />
+</div>
+<div>
+    <h3>图片显示</h3>
+    <img id="image" src="" alt="这里是图片">
+</div>
+<script>
+    let imageFile = $("#image-file");
+    imageFile.change(function () {
+        // 创建表单数据
+        let formData = new FormData();
+        formData.append("imageFile", imageFile[0].files[0]);
+        // ajax请求
+        $.ajax({
+            url: "image/upload",
+            type: "post",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (result) {
+                if (result.path != null && result.imagePath != null) {
+                    alert("图片上传成功!" + result.path);
+                    $("#image").attr("src", result.imagePath);
+                } else {
+                    alert("图片上传失败，请稍后重试！");
+                }
+            },
+        });
+    });
+</script>
+</body>
+</html>
