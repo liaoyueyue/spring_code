@@ -1,0 +1,3 @@
+# ??????? = ??????????
+org.springframework.context.ApplicationContextInitializer = com.example.springinterview.initializer.MyContextInitializer
+org.springframework.context.ApplicationListener = com.example.springinterview.listener.MyListener
