@@ -19,7 +19,7 @@ public class MyBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
     // 当 BeanFactory 被实例化好后（bean创建之前），回调这个函数，注册一些 BeanDefinition
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
-        // 注册一个 User 的 BeanDefinition
+        // 注册一个 Admin 的 BeanDefinition
         GenericBeanDefinition beanDefinition = new GenericBeanDefinition();
         beanDefinition.setBeanClass(Admin.class);
         DefaultListableBeanFactory defaultListableBeanFactory = (DefaultListableBeanFactory) beanFactory;
